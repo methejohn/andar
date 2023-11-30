@@ -144,7 +144,7 @@
 .prd-list .desc-box{ padding: 15px 5% 0; }
 .prd-list .review{position: relative; display: block; color: #8e1f29; font-size: 13px; font-weight: 600; line-height: 1;}
 .prd-list .link-name{display: block; padding: 10px 0; font-size: 13px; line-height: 17px; letter-spacing: -0.05em;}
-.prd-list .price{ display: flex; flex-wrap: wrap; align-items: flex-end; gap: 0 5px; margin-bottom: 5px; line-height: 1;}
+.prd-list .price{ display: flex; flex-wrap: wrap; align-items: flex-end; gap: 0 5px; margin-bottom: 5px; line-height: 1.1;}
 .prd-list .percent{ font-size: 15px; color: #8e1f29; font-weight: bold; }
 .prd-list .current{ color: #333; font-size: 15px; font-weight: 500; letter-spacing: -0.03em; }
 .prd-list .before{ font-size: 13px ; color: #8d8d8d;}
