@@ -96,14 +96,14 @@
     border-radius: 60px;
 }
 
-
+.prd-list.style4,
 .prd-list.style3,
 .prd-list.style1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 10px;
 }
-
+.prd-list.style4 .prd-item,
 .prd-list.style3 .prd-item,
 .prd-list.style1 .prd-item{
     padding-bottom: 50px;
@@ -129,9 +129,7 @@
 
 
 .prd-list .prd-item{position: relative;}
-.prd-list .link{position: absolute;
-top: 0;left: 0;right: 0;bottom: 0;
-}
+.prd-list .link{position: absolute; top: 0;left: 0;right: 0;bottom: 0; z-index: 1; }
 .prd-list .thumb-box{ position: relative;}
 .prd-list .thumb-box .number{ position: absolute; top: 0; left: 0; width: 30px; height: 29px; background-color: #000; color: #fff; font-size: 15px; font-weight: 500; display: flex; justify-content: center; align-items: center; }
 .prd-list .thumb-box .img{width: 100%;}
@@ -144,9 +142,9 @@ top: 0;left: 0;right: 0;bottom: 0;
 }
 .prd-list .thumb-box .icons img{width: 100%;}
 .prd-list .desc-box{ padding: 15px 5% 0; }
-.prd-list .review{position: relative; display: block; color: #8e1f29; font-size: 13px; font-weight: 600; }
-.prd-list .link-name{ display: block; color: #333; font-size: 14px; padding: 5px 0; }
-.prd-list .price{ display: flex; flex-wrap: wrap; align-items: flex-end; gap: 0 5px; margin-bottom: 5px; }
+.prd-list .review{position: relative; display: block; color: #8e1f29; font-size: 13px; font-weight: 600; line-height: 1;}
+.prd-list .link-name{display: block; padding: 10px 0; font-size: 13px; line-height: 17px; letter-spacing: -0.05em;}
+.prd-list .price{ display: flex; flex-wrap: wrap; align-items: flex-end; gap: 0 5px; margin-bottom: 5px; line-height: 1;}
 .prd-list .percent{ font-size: 15px; color: #8e1f29; font-weight: bold; }
 .prd-list .current{ color: #333; font-size: 15px; font-weight: 500; letter-spacing: -0.03em; }
 .prd-list .before{ font-size: 13px ; color: #8d8d8d;}
@@ -154,6 +152,7 @@ top: 0;left: 0;right: 0;bottom: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+    margin-top: 10px;
 }
 .prd-list .banner{
     border: 1px solid rgba(142,31,41,0.5); 
@@ -165,10 +164,6 @@ top: 0;left: 0;right: 0;bottom: 0;
     color: #8e1f28; 
     max-width: 100%;
 }
-
-
-
-
 
 .sc-best .link-more{
     margin: 0 16px 60px;
@@ -270,14 +265,18 @@ top: 0;left: 0;right: 0;bottom: 0;
     flex: 1;
     padding: 0 28px;
 }
-
 .prd-list.style3 .prd-item{
     min-width: 0;
 }
 .prd-list.style3 .desc-box{
     padding: 21px 0 0 0;
 }
-.prd-list.style3 .desc-box .name{
+.prd-list.style4 .desc-box{
+    padding-top: 21px;
+}
+.prd-list.style4 .desc-box .link-name,
+.prd-list.style3 .desc-box .link-name{
+    padding-top: 0;
     padding-bottom: 10px;
     overflow: hidden;
     white-space: nowrap;
